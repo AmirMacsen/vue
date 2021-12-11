@@ -19,7 +19,7 @@ module.exports = {
         "folding-chapters": {},
         "theme-hqbook": {
             // "favicon": "./favicon.ico",
-            "logo": "/images/logo.png",
+            "logo": "https://note-1302735599.cos.ap-guangzhou.myqcloud.com/VueBase/logo.png",
             "search-placeholder": "输入关键字搜索",
             "copyButtons": true,
             "copyLines": true,

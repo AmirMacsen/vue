@@ -1,0 +1,1657 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6. 嵌套路由 · Vue基础</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="amir">
+        <meta name="identifier" content="0001" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-halogenpi-staticpagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-hqbook/theme.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7-编程式路由导航.html" />
+    
+    
+    <link rel="prev" href="5-路由的简介.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="header-inner">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="" alt="logo">
+        </div>
+        <span class="title"></span>
+
+        <!-- Search -->
+        
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+
+        <!-- Nav -->
+        <ul class="header-nav">
+            
+        </ul>
+    </div>
+
+    <div class="book-summary">
+        <!--<div class="book-summary-title">文档目录</div>-->
+        
+        
+        <nav role="navigation">
+            
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    项目介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/0-README.html">
+            
+                <a href="../chapter1/0-README.html">
+            
+                    
+                    第一章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter1/1-Vue概述.html">
+            
+                <a href="../chapter1/1-Vue概述.html">
+            
+                    
+                    1. Vue概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/2-Hello,World.html">
+            
+                <a href="../chapter1/2-Hello,World.html">
+            
+                    
+                    2. Hello,Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter1/3-模板语法.html">
+            
+                <a href="../chapter1/3-模板语法.html">
+            
+                    
+                    3. 模板语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter1/4-数据绑定.html">
+            
+                <a href="../chapter1/4-数据绑定.html">
+            
+                    
+                    4. 数据绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter1/5-el与data的两种写法.html">
+            
+                <a href="../chapter1/5-el与data的两种写法.html">
+            
+                    
+                    5. el与data的两种写法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter1/6-MVVM模型.html">
+            
+                <a href="../chapter1/6-MVVM模型.html">
+            
+                    
+                    6. MVVM模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../chapter1/7-数据代理.html">
+            
+                <a href="../chapter1/7-数据代理.html">
+            
+                    
+                    7. 数据代理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../chapter1/8-事件绑定.html">
+            
+                <a href="../chapter1/8-事件绑定.html">
+            
+                    
+                    8. 事件绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../chapter1/9-计算属性.html">
+            
+                <a href="../chapter1/9-计算属性.html">
+            
+                    
+                    9. 计算属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../chapter1/10-监听属性.html">
+            
+                <a href="../chapter1/10-监听属性.html">
+            
+                    
+                    10. 监听属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../chapter1/11-watchVScomputed.html">
+            
+                <a href="../chapter1/11-watchVScomputed.html">
+            
+                    
+                    11. watchVScomputed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../chapter1/12-绑定样式.html">
+            
+                <a href="../chapter1/12-绑定样式.html">
+            
+                    
+                    12. 绑定样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../chapter1/13-条件渲染.html">
+            
+                <a href="../chapter1/13-条件渲染.html">
+            
+                    
+                    13. 条件渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../chapter1/14-列表渲染.html">
+            
+                <a href="../chapter1/14-列表渲染.html">
+            
+                    
+                    14. 列表渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="../chapter1/15-key详解.html">
+            
+                <a href="../chapter1/15-key详解.html">
+            
+                    
+                    15. key详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../chapter1/16-列表过滤.html">
+            
+                <a href="../chapter1/16-列表过滤.html">
+            
+                    
+                    16. 列表过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../chapter1/17-列表排序.html">
+            
+                <a href="../chapter1/17-列表排序.html">
+            
+                    
+                    17. 列表排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="../chapter1/18-Vue是怎么监视数据改变的.html">
+            
+                <a href="../chapter1/18-Vue是怎么监视数据改变的.html">
+            
+                    
+                    18. Vue是怎么监视数据改变的
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.19" data-path="../chapter1/19-收集表单数据.html">
+            
+                <a href="../chapter1/19-收集表单数据.html">
+            
+                    
+                    19. 收集表单数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.20" data-path="../chapter1/20-过滤器.html">
+            
+                <a href="../chapter1/20-过滤器.html">
+            
+                    
+                    20. 过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.21" data-path="../chapter1/21-其他内置指令.html">
+            
+                <a href="../chapter1/21-其他内置指令.html">
+            
+                    
+                    21. 其他内置指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.22" data-path="../chapter1/22-自定义指令.html">
+            
+                <a href="../chapter1/22-自定义指令.html">
+            
+                    
+                    22. 自定义指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/0-README.html">
+            
+                <a href="../chapter2/0-README.html">
+            
+                    
+                    第二章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter2/1-Vue生命周期.html">
+            
+                <a href="../chapter2/1-Vue生命周期.html">
+            
+                    
+                    1. Vue的生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter2/2-非单文件组件.html">
+            
+                <a href="../chapter2/2-非单文件组件.html">
+            
+                    
+                    2. 非单文件组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter2/3-vueComponent构造函数.html">
+            
+                <a href="../chapter2/3-vueComponent构造函数.html">
+            
+                    
+                    3. vueComponent构造函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter2/4-一个重要的内置关系.html">
+            
+                <a href="../chapter2/4-一个重要的内置关系.html">
+            
+                    
+                    4. 一个重要的内置关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter2/5-单文件组件.html">
+            
+                <a href="../chapter2/5-单文件组件.html">
+            
+                    
+                    5. 单文件组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter2/6-vue脚手架.html">
+            
+                <a href="../chapter2/6-vue脚手架.html">
+            
+                    
+                    6. vue脚手架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../chapter2/7-render配置项.html">
+            
+                <a href="../chapter2/7-render配置项.html">
+            
+                    
+                    7. render配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../chapter2/8-ref属性.html">
+            
+                <a href="../chapter2/8-ref属性.html">
+            
+                    
+                    8. ref属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../chapter2/9-props配置项.html">
+            
+                <a href="../chapter2/9-props配置项.html">
+            
+                    
+                    9. props配置项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../chapter2/10-mixin.html">
+            
+                <a href="../chapter2/10-mixin.html">
+            
+                    
+                    10. mixin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../chapter2/11-插件.html">
+            
+                <a href="../chapter2/11-插件.html">
+            
+                    
+                    11. 插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../chapter2/12-style-scope.html">
+            
+                <a href="../chapter2/12-style-scope.html">
+            
+                    
+                    12. style-scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/0-README.html">
+            
+                <a href="../chapter3/0-README.html">
+            
+                    
+                    第三章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapte3/1-TodoList案例.md">
+            
+                <span>
+            
+                    
+                    1. TodoList案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter3/2-webStorage.html">
+            
+                <a href="../chapter3/2-webStorage.html">
+            
+                    
+                    2. webStorage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter3/3-组件自定义事件.html">
+            
+                <a href="../chapter3/3-组件自定义事件.html">
+            
+                    
+                    3. 组件自定义事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter3/4-组件自定义事件修改TodoList.md">
+            
+                <span>
+            
+                    
+                    4. 组件自定义事件修改TodoList
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter3/5-全局事件总线.html">
+            
+                <a href="../chapter3/5-全局事件总线.html">
+            
+                    
+                    5. 全局事件总线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter3/6-$bus对TodoList进行改造.html">
+            
+                <a href="../chapter3/6-$bus对TodoList进行改造.html">
+            
+                    
+                    6. $bus对TodoList进行改造
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter3/7-消息的订阅和发布.html">
+            
+                <a href="../chapter3/7-消息的订阅和发布.html">
+            
+                    
+                    7. 消息的订阅和发布
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../chapter3/8-TodoList编辑功能.html">
+            
+                <a href="../chapter3/8-TodoList编辑功能.html">
+            
+                    
+                    8. TodoList编辑功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../chapter3/9-动画效果.html">
+            
+                <a href="../chapter3/9-动画效果.html">
+            
+                    
+                    9. 动画效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../chapter3/10-过渡效果.html">
+            
+                <a href="../chapter3/10-过渡效果.html">
+            
+                    
+                    10. 过渡效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../chapter3/11-vue封装的过渡和动画.html">
+            
+                <a href="../chapter3/11-vue封装的过渡和动画.html">
+            
+                    
+                    11. vue封装的过渡和动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../chapter3/12-vue代理配置.html">
+            
+                <a href="../chapter3/12-vue代理配置.html">
+            
+                    
+                    12. vue代理配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../chapter3/13-一个get请求案例.html">
+            
+                <a href="../chapter3/13-一个get请求案例.html">
+            
+                    
+                    13. 一个get请求案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.14" data-path="../chapter3/14-插槽.html">
+            
+                <a href="../chapter3/14-插槽.html">
+            
+                    
+                    14. 插槽
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="0-README.html">
+            
+                <a href="0-README.html">
+            
+                    
+                    第四章
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../chapte4/1-理解vuex.md">
+            
+                <span>
+            
+                    
+                    1. 理解vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2-mapState、mapGetters、mapActions、mapMutations.html">
+            
+                <a href="2-mapState、mapGetters、mapActions、mapMutations.html">
+            
+                    
+                    2. mapState、mapGetters、mapActions、mapMutations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3-多组件数据共享.html">
+            
+                <a href="3-多组件数据共享.html">
+            
+                    
+                    3. 多组件数据共享
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4-vuex模块化.html">
+            
+                <a href="4-vuex模块化.html">
+            
+                    
+                    4. vuex模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="5-路由的简介.html">
+            
+                <a href="5-路由的简介.html">
+            
+                    
+                    5. 路由的简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.6" data-path="6-嵌套路由.html">
+            
+                <a href="6-嵌套路由.html">
+            
+                    
+                    6. 嵌套路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="7-编程式路由导航.html">
+            
+                <a href="7-编程式路由导航.html">
+            
+                    
+                    7. 编程式路由导航
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="8-缓存路由组件.html">
+            
+                <a href="8-缓存路由组件.html">
+            
+                    
+                    8. 缓存路由组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="9-两个router的生命周期钩子.html">
+            
+                <a href="9-两个router的生命周期钩子.html">
+            
+                    
+                    9. 两个router的生命周期钩子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="10-路由守卫.html">
+            
+                <a href="10-路由守卫.html">
+            
+                    
+                    10. 路由守卫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="11-history模式和hash模式.html">
+            
+                <a href="11-history模式和hash模式.html">
+            
+                    
+                    11. history模式和hash模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+        </nav>
+        
+        
+    </div>
+
+    <!-- Content nav -->
+    <div class="book-anchor">
+        <!--<div class="book-anchor-title">在这篇文章中:</div>-->
+        <div class="book-anchor-body">
+
+        </div>
+    </div>
+
+    <div class="book-body">
+        
+        <div class="body-inner">
+            
+            
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6. 嵌套路由</a>
+    </h1>
+</div>
+
+
+
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                    <section class="normal markdown-section">
+                        
+                        <h1 id="&#x1F6F4;&#x5D4C;&#x5957;&#x8DEF;&#x7531;&#x5B9E;&#x73B0;"><font color="cornflowerblue">&#x1F6F4;&#x5D4C;&#x5957;&#x8DEF;&#x7531;&#x5B9E;&#x73B0;</font></h1>
+<h2 id="routerindexjs">router/index.js</h2>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x8BE5;&#x6587;&#x4EF6;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x5668;</span>
+<span class="hljs-keyword">import</span> VueRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue-router&quot;</span>
+<span class="hljs-keyword">import</span> About <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/About&quot;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Home&quot;</span>;
+<span class="hljs-keyword">import</span> News <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/news&quot;</span>;
+<span class="hljs-keyword">import</span> Message <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/messages&quot;</span>;
+<span class="hljs-keyword">import</span> Detail <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Detail&quot;</span>;
+
+<span class="hljs-comment">//&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x5668;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> VueRouter({
+    routes:[
+        {
+            path:<span class="hljs-string">&apos;/about&apos;</span>,
+            component:About,
+        },
+        {
+            path:<span class="hljs-string">&apos;/home&apos;</span>,
+            component:Home,
+            children:[
+                {
+                    path:<span class="hljs-string">&apos;news&apos;</span>,
+                    component:News
+                },
+                {
+                    path:<span class="hljs-string">&apos;message&apos;</span>,
+                    component:Message,
+                    children:[
+                        {
+                            path:<span class="hljs-string">&apos;detail&apos;</span>,
+                            component:Detail
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
+})
+</code></pre>
+<h2 id="homevue">Home.vue</h2>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    &lt;div&gt;
+      &lt;h2&gt;Home&#x7EC4;&#x4EF6;&#x5185;&#x5BB9;&lt;/h2&gt;
+      &lt;div&gt;
+        &lt;ul class=&quot;nav nav-tabs&quot;&gt;
+          &lt;li&gt;
+            &lt;router-link class=&quot;list-group-item&quot; active-class=&quot;active&quot; to=&quot;/home/news&quot;&gt;News&lt;/router-link&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;router-link class=&quot;list-group-item&quot; active-class=&quot;active&quot; to=&quot;/home/message&quot;&gt;Message&lt;/router-link&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div&gt;
+          &lt;router-view&gt;&lt;/router-view&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;Home&quot;
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h2 id="messagesvue">Messages.vue</h2>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+      &lt;li v-for=&quot;message in messageList&quot; :key=&quot;message.id&quot;&gt;
+        &lt;router-link :to=&quot;`/home/message/detail?id=${message.id}&amp;title=${message.title}`&quot;&gt;&lt;/router-link&gt;&amp;nbsp;&amp;nbsp;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;hr&gt;
+    &lt;router-view&gt;&lt;/router-view&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;messages&quot;,
+  data(){
+    return {
+      messageList:[
+        {id:&quot;001&quot;,title:&quot;&#x6D88;&#x606F;001&quot;},
+        {id:&quot;002&quot;,title:&quot;&#x6D88;&#x606F;002&quot;},
+        {id:&quot;003&quot;,title:&quot;&#x6D88;&#x606F;003&quot;},
+      ]
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h2 id="newsvue">News.vue</h2>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;ul&gt;
+    &lt;li&gt;news001&lt;/li&gt;
+    &lt;li&gt;news002&lt;/li&gt;
+    &lt;li&gt;news003&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;news&quot;
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h2 id="detailsvue">Details.vue</h2>
+<pre><code class="lang-vue">&lt;template&gt;
+&lt;ul&gt;
+  &lt;li&gt;&#x6D88;&#x606F;&#x7F16;&#x53F7;&#xFF1A;&lt;/li&gt;
+  &lt;li&gt;&#x6D88;&#x606F;&#x6807;&#x9898;&#xFF1A;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;Detail&quot;
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h1 id="&#x1F6F4;-&#x5177;&#x540D;&#x8DEF;&#x7531;"><font color="cornflowerblue">&#x1F6F4; &#x5177;&#x540D;&#x8DEF;&#x7531;</font></h1>
+<blockquote>
+<p>&#x7ED9;&#x8DEF;&#x7531;&#x8D77;&#x4E00;&#x4E2A;&#x540D;&#x5B57;&#xFF0C;&#x5F53;&#x8DEF;&#x7531;&#x8FC7;&#x957F;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x7528;name&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x8DF3;&#x8F6C;&#x5730;&#x5740;</p>
+</blockquote>
+<h2 id="routerindexjs">router/index.js</h2>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x8BE5;&#x6587;&#x4EF6;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x5668;</span>
+<span class="hljs-keyword">import</span> VueRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue-router&quot;</span>
+<span class="hljs-keyword">import</span> About <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/About&quot;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Home&quot;</span>;
+<span class="hljs-keyword">import</span> News <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/News&quot;</span>;
+<span class="hljs-keyword">import</span> Message <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Messages&quot;</span>;
+<span class="hljs-keyword">import</span> Detail <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Detail&quot;</span>;
+
+<span class="hljs-comment">//&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x5668;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> VueRouter({
+    routes:[
+        {
+            name:<span class="hljs-string">&quot;about&quot;</span>,
+            path:<span class="hljs-string">&apos;/about&apos;</span>,
+            component:About,
+        },
+        {
+            path:<span class="hljs-string">&apos;/home&apos;</span>,
+            component:Home,
+            children:[
+                {
+                    path:<span class="hljs-string">&apos;news&apos;</span>,
+                    component:News
+                },
+                {
+                    path:<span class="hljs-string">&apos;message&apos;</span>,
+                    component:Message,
+                    children:[
+                        {
+                            name:<span class="hljs-string">&quot;detail&quot;</span>,
+                            path:<span class="hljs-string">&apos;detail&apos;</span>,
+                            component:Detail
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
+})
+</code></pre>
+<h2 id="appvue">App.vue</h2>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;Banner&gt;&lt;/Banner&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-xs-2 col-xs-offset-2&quot;&gt;
+        &lt;div class=&quot;list-group&quot;&gt;
+&lt;!--         &#x539F;&#x59CB;&#x8DEF;&#x7531;&#x4F7F;&#x7528;a&#x6807;&#x7B7E;&#x5B9E;&#x73B0;&#x8DEF;&#x7531;&#x8DF3;&#x8F6C; --&gt;
+&lt;!--          &lt;a class=&quot;list-group-item&quot; href=&quot;./about.html&quot;&gt;About&lt;/a&gt;
+          &lt;a class=&quot;list-group-item active&quot; href=&quot;./home.html&quot;&gt;Home&lt;/a&gt;--&gt;
+
+          &lt;router-link class=&quot;list-group-item&quot; active-class=&quot;active&quot; :to=&quot;{name:&apos;about&apos;}&quot;&gt;About&lt;/router-link&gt;
+          &lt;router-link class=&quot;list-group-item&quot; active-class=&quot;active&quot; to=&quot;/home&quot;&gt;Home&lt;/router-link&gt;
+
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-xs-6&quot;&gt;
+        &lt;div class=&quot;panel&quot;&gt;
+          &lt;div class=&quot;panel-body&quot;&gt;
+&lt;!--            &#x6307;&#x5B9A;&#x7EC4;&#x4EF6;&#x7684;&#x5448;&#x73B0;&#x4F4D;&#x7F6E;--&gt;
+            &lt;router-view&gt;&lt;/router-view&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import Banner from &quot;@/components/Banner&quot;;
+export default {
+  name: &apos;App&apos;,
+  components:{
+    Banner
+  },
+}
+&lt;/script&gt;
+
+&lt;style&gt;
+  /*base*/
+  body {
+    background: #fff;
+  }
+
+&lt;/style&gt;
+</code></pre>
+<h2 id="messagevue">Message.vue</h2>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+      &lt;li v-for=&quot;message in messageList&quot; :key=&quot;message.id&quot;&gt;
+&lt;!--        &lt;router-link :to=&quot;`/home/message/detail?id=${message.id}&amp;title=${message.title}`&quot;&gt;&lt;/router-link&gt;&amp;nbsp;&amp;nbsp;--&gt;
+        &lt;router-link :to=&quot;{
+          name:&apos;detail&apos;,
+          query:{
+            id:message.id,
+            title: message.title
+          }
+        }&quot;&gt;&lt;/router-link&gt;&amp;nbsp;&amp;nbsp;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;hr&gt;
+    &lt;router-view&gt;&lt;/router-view&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;messages&quot;,
+  data(){
+    return {
+      messageList:[
+        {id:&quot;001&quot;,title:&quot;&#x6D88;&#x606F;001&quot;},
+        {id:&quot;002&quot;,title:&quot;&#x6D88;&#x606F;002&quot;},
+        {id:&quot;003&quot;,title:&quot;&#x6D88;&#x606F;003&quot;},
+      ]
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h1 id="&#x1F680;&#x603B;&#x7ED3;"><font color="cornflowerblue">&#x1F680;&#x603B;&#x7ED3;</font></h1>
+<ul>
+<li>&#x5D4C;&#x5957;&#x8DEF;&#x7531;&#x7684;&#x7F16;&#x5199;&#x65B9;&#x5F0F;&#xFF1A;<ul>
+<li>&#x5728;index&#x4E2D;&#x88AB;&#x5D4C;&#x5957;&#x7684;&#x8DEF;&#x7531;&#x4E0B;&#x9762;&#x5199;&#x4E00;&#x4E2A;children&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x6CE8;&#x610F;path&#x4E0D;&#x7528;&#x5E26;&quot;/&quot;</li>
+<li>router-link&#x4E2D;&#x5199;&#x8DEF;&#x7531;&#x7684;&#x5168;&#x8DEF;&#x5F84;&#xFF1A;<code>/home/message</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="&#x8DEF;&#x7531;&#x7684;query&#x53C2;&#x6570;">&#x8DEF;&#x7531;&#x7684;query&#x53C2;&#x6570;</h2>
+<ul>
+<li>&#x8DEF;&#x7531;&#x8DF3;&#x8F6C;&#x65F6;&#x53EF;&#x4EE5;&#x5E26;query&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x52A8;&#x6001;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>:to</code>+&#x6A21;&#x677F;&#x5B57;&#x7B26;&#x4E32;&#x5B8C;&#x6210;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x66F4;&#x52A0;&#x901A;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#x5199;&#x6CD5;&#x5982;&#x4E0B;</li>
+<li>&#x63A5;&#x6536;query&#x53C2;&#x6570;&#x4F7F;&#x7528;<code>$route.query.xxx</code></li>
+</ul>
+<h2 id="messagevue">Message.vue</h2>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+      &lt;li v-for=&quot;message in messageList&quot; :key=&quot;message.id&quot;&gt;
+&lt;!--        &lt;router-link :to=&quot;`/home/message/detail?id=${message.id}&amp;title=${message.title}`&quot;&gt;&lt;/router-link&gt;&amp;nbsp;&amp;nbsp;--&gt;
+        &lt;router-link :to=&quot;{
+          path:&apos;/home/message/detail&apos;,
+          query:{
+            id:message.id,
+            title: message.title
+          }
+        }&quot;&gt;&lt;/router-link&gt;&amp;nbsp;&amp;nbsp;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;hr&gt;
+    &lt;router-view&gt;&lt;/router-view&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;messages&quot;,
+  data(){
+    return {
+      messageList:[
+        {id:&quot;001&quot;,title:&quot;&#x6D88;&#x606F;001&quot;},
+        {id:&quot;002&quot;,title:&quot;&#x6D88;&#x606F;002&quot;},
+        {id:&quot;003&quot;,title:&quot;&#x6D88;&#x606F;003&quot;},
+      ]
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h2 id="&#x8DEF;&#x7531;&#x7684;params&#x53C2;&#x6570;">&#x8DEF;&#x7531;&#x7684;params&#x53C2;&#x6570;</h2>
+<ul>
+<li>&#x8DEF;&#x7531;&#x5E26;&#x53C2;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;params&#x53C2;&#x6570;&#xFF0C;&#x6BD4;&#x5982;<code>/home/message/detail/001/math</code>&#xFF0C;&#x5176;&#x4E2D;detail&#x53CA;&#x4E4B;&#x524D;&#x7684;&#x90FD;&#x662F;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x662F;&#x53C2;&#x6570;&#xFF0C;&#x5199;&#x6CD5;&#x5982;&#x4E0B;</li>
+<li>params&#x53C2;&#x6570;&#x9700;&#x8981;&#x5FC5;&#x987B;&#x8DDF;name&#x5C5E;&#x6027;&#x914D;&#x5408;&#xFF0C;path&#x4E0D;&#x652F;&#x6301;</li>
+</ul>
+<h2 id="routerindexjs">router/index.js</h2>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x8BE5;&#x6587;&#x4EF6;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x5668;</span>
+<span class="hljs-keyword">import</span> VueRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue-router&quot;</span>
+<span class="hljs-keyword">import</span> About <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/About&quot;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Home&quot;</span>;
+<span class="hljs-keyword">import</span> News <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/News&quot;</span>;
+<span class="hljs-keyword">import</span> Message <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Messages&quot;</span>;
+<span class="hljs-keyword">import</span> Detail <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Detail&quot;</span>;
+
+<span class="hljs-comment">//&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x5668;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> VueRouter({
+    routes:[
+        {
+            name:<span class="hljs-string">&quot;about&quot;</span>,
+            path:<span class="hljs-string">&apos;/about&apos;</span>,
+            component:About,
+        },
+        {
+            path:<span class="hljs-string">&apos;/home&apos;</span>,
+            component:Home,
+            children:[
+                {
+                    path:<span class="hljs-string">&apos;news&apos;</span>,
+                    component:News
+                },
+                {
+                    path:<span class="hljs-string">&apos;message&apos;</span>,
+                    component:Message,
+                    children:[
+                        {
+                            name:<span class="hljs-string">&quot;detail&quot;</span>,
+                            path:<span class="hljs-string">&apos;detail/:id/:title&apos;</span>,
+                            component:Detail
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
+})
+</code></pre>
+<h2 id="messagevue">Message.vue</h2>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+      &lt;li v-for=&quot;message in messageList&quot; :key=&quot;message.id&quot;&gt;
+&lt;!--        &lt;router-link :to=&quot;`/home/message/detail?id=${message.id}&amp;title=${message.title}`&quot;&gt;&lt;/router-link&gt;&amp;nbsp;&amp;nbsp;--&gt;
+        &lt;router-link :to=&quot;{
+          name:&apos;detail&apos;,
+          params:{
+            id:message.id,
+            title: message.title
+          }
+        }&quot;&gt;&lt;/router-link&gt;&amp;nbsp;&amp;nbsp;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;hr&gt;
+    &lt;router-view&gt;&lt;/router-view&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;messages&quot;,
+  data(){
+    return {
+      messageList:[
+        {id:&quot;001&quot;,title:&quot;&#x6D88;&#x606F;001&quot;},
+        {id:&quot;002&quot;,title:&quot;&#x6D88;&#x606F;002&quot;},
+        {id:&quot;003&quot;,title:&quot;&#x6D88;&#x606F;003&quot;},
+      ]
+    }
+  }
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h2 id="&#x8DEF;&#x7531;&#x7684;pops&#x53C2;&#x6570;">&#x8DEF;&#x7531;&#x7684;pops&#x53C2;&#x6570;</h2>
+<h3 id="routerindexjs">router/index.js</h3>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x8BE5;&#x6587;&#x4EF6;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5E94;&#x7528;&#x7684;&#x8DEF;&#x7531;&#x5668;</span>
+<span class="hljs-keyword">import</span> VueRouter <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue-router&quot;</span>
+<span class="hljs-keyword">import</span> About <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/About&quot;</span>;
+<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Home&quot;</span>;
+<span class="hljs-keyword">import</span> News <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/News&quot;</span>;
+<span class="hljs-keyword">import</span> Message <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Messages&quot;</span>;
+<span class="hljs-keyword">import</span> Detail <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@/pages/Detail&quot;</span>;
+
+<span class="hljs-comment">//&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8DEF;&#x7531;&#x5668;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> VueRouter({
+    routes:[
+        {
+            name:<span class="hljs-string">&quot;about&quot;</span>,
+            path:<span class="hljs-string">&apos;/about&apos;</span>,
+            component:About,
+        },
+        {
+            path:<span class="hljs-string">&apos;/home&apos;</span>,
+            component:Home,
+            children:[
+                {
+                    path:<span class="hljs-string">&apos;news&apos;</span>,
+                    component:News
+                },
+                {
+                    path:<span class="hljs-string">&apos;message&apos;</span>,
+                    component:Message,
+                    children:[
+                        {
+                            name:<span class="hljs-string">&quot;detail&quot;</span>,
+                            path:<span class="hljs-string">&apos;detail&apos;</span>,
+                            component:Detail,
+                            <span class="hljs-comment">//&#x7B2C;&#x4E00;&#x79CD;&#x5199;&#x6CD5;&#xFF1A;props&#x4E3A;&#x503C;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x6240;&#x6709;&#x7684;&#x7684;k-v&#x6700;&#x7EC8;&#x90FD;&#x4F1A;&#x901A;&#x8FC7;props&#x4F20;&#x9012;&#x7ED9;Detail&#x7EC4;&#x4EF6;</span>
+                            <span class="hljs-comment">// props:{id:100,title:&quot;amir&quot;}</span>
+                            <span class="hljs-comment">//&#x7B2C;&#x4E8C;&#x79CD;&#x5199;&#x6CD5;&#xFF1A;props&#x4E3A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x8DEF;&#x7531;&#x6536;&#x5230;&#x7684;&#x6240;&#x6709;params&#x53C2;&#x6570;&#x901A;&#x8FC7;props&#x4F20;&#x9012;&#x7ED9;Detail&#x7EC4;&#x4EF6;</span>
+                            <span class="hljs-comment">// props:true</span>
+                            <span class="hljs-comment">//&#x7B2C;&#x4E09;&#x79CD;&#x5199;&#x6CD5;&#xFF1A;props&#x503C;&#x4E3A;&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x4E2D;&#x6BCF;&#x4E00;&#x7EC4;k-v&#x90FD;&#x4F1A;&#x901A;&#x8FC7;props&#x4F20;&#x9012;&#x7ED9;Detail&#x7EC4;&#x4EF6;</span>
+                            props($route){
+                                <span class="hljs-keyword">return</span> {
+                                    id:$route.query.id,
+                                    title:$route.query.title
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+    ]
+})
+</code></pre>
+<h3 id="detailvue">Detail.vue</h3>
+<pre><code class="lang-vue">&lt;template&gt;
+&lt;ul&gt;
+  &lt;li&gt;&#x6D88;&#x606F;&#x7F16;&#x53F7;&#xFF1A;&lt;/li&gt;
+  &lt;li&gt;&#x6D88;&#x606F;&#x6807;&#x9898;&#xFF1A;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;Detail&quot;,
+  props:[&apos;id&apos;,&apos;title&apos;]
+}
+
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<h2 id="&#x8DEF;&#x7531;&#x5BF9;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x7684;&#x5F71;&#x54CD;">&#x8DEF;&#x7531;&#x5BF9;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x7684;&#x5F71;&#x54CD;</h2>
+<blockquote>
+<p>&#x4E00;&#x822C;&#x7684;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x8BBF;&#x95EE;&#xFF0C;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4F1A;&#x4FDD;&#x5B58;&#x5728;&#x5728;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x7ED3;&#x6784;&#x4E2D;&#xFF0C;&#x7528;&#x6237;&#x70B9;&#x524D;&#x8FDB;&#x6216;&#x8005;&#x540E;&#x9000;&#x5F53;&#x524D;&#x6307;&#x5411;&#x6307;&#x9488;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x5C31;&#x4F1A;&#x6539;&#x53D8;&#x5F53;&#x524D;&#x6D4F;&#x89C8;&#x7684;&#x9875;&#x9762;&#x3002;</p>
+<p>router-link&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;replace&#x5C5E;&#x6027;&#xFF0C;&#x5176;&#x503C;&#x4E3A;bool&#x503C;&#x3002;replace&#x4F5C;&#x7528;&#x662F;&#x66FF;&#x6362;&#x6389;&#x5F53;&#x524D;&#x8BB0;&#x5F55;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-vue">&lt;template&gt;
+  &lt;div class=&quot;panel-body&quot;&gt;
+    &lt;div&gt;
+      &lt;h2&gt;Home&#x7EC4;&#x4EF6;&#x5185;&#x5BB9;&lt;/h2&gt;
+      &lt;div&gt;
+        &lt;ul class=&quot;nav nav-tabs&quot;&gt;
+          &lt;li&gt;
+            &lt;router-link
+               replace class=&quot;list-group-item&quot; active-class=&quot;active&quot; to=&quot;/home/news&quot;&gt;News&lt;/router-link&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;router-link
+               :replace=&quot;true&quot; class=&quot;list-group-item&quot; active-class=&quot;active&quot; to=&quot;/home/message&quot;&gt;Message&lt;/router-link&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div&gt;
+          &lt;router-view&gt;&lt;/router-view&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &quot;Home&quot;
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+
+&lt;/style&gt;
+</code></pre>
+<footer class="page-footer"><span class="copyright">1513 words</span><span class="footer-modification">
+</span></footer>
+                        
+                    </section>
+                    
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        
+        
+        <a href="5-路由的简介.html"
+           class="navigation navigation-prev "
+           aria-label="Previous page: 5. 路由的简介">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        
+        
+        <a href="7-编程式路由导航.html"
+           class="navigation navigation-next "
+           aria-label="Next page: 7. 编程式路由导航">
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+        
+        
+    </div>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6. 嵌套路由","level":"1.5.6","depth":2,"next":{"title":"7. 编程式路由导航","level":"1.5.7","depth":2,"path":"chapter4/7-编程式路由导航.md","ref":"chapter4/7-编程式路由导航.md","articles":[]},"previous":{"title":"5. 路由的简介","level":"1.5.5","depth":2,"path":"chapter4/5-路由的简介.md","ref":"chapter4/5-路由的简介.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","code","theme-hqbook","folding-chapters","expandable-chapters","back-to-top-button","halogenpi-staticpagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"folding-chapters":{},"highlight":{},"back-to-top-button":{},"theme-hqbook":{"favicon":"./favicon.ico","logo":"https://note-1302735599.cos.ap-guangzhou.myqcloud.com/VueBase/logo.png","search-placeholder":"输入关键字搜索","copyButtons":true,"copyLines":true,"dragSplitter":true,"flexible-linkcard":{"title":"flexible-linkcard","target":"_blank","hrefUrl":"https://github.com/HaoqiangChen/gitbook-plugin-flexible-linkcard","imgSrc":"../../images/home/logo.png","imgClass":"rect"},"hide-elements":[".summary .gitbook-link"]},"halogenpi-staticpagefooter":{"wordcount":"%d words"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"amir","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"0001","variables":{},"title":"Vue基础","gitbook":"*","description":"Vue语法基础"},"file":{"path":"chapter4/6-嵌套路由.md","mtime":"2021-12-11T01:14:29.789Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-11T12:28:38.158Z"},"basePath":"..","book":{"language":""}})
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-folding-chapters/folding-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-hqbook/theme.js"></script>
+        
+    
+
+    </body>
+</html>
+
